@@ -33,16 +33,16 @@ ner = named_entity_extractor('./MITIE-models/english/ner_model.dat')
 print "\nTags output by this NER model:", ner.get_possible_ner_tags()
 
 # Load a text file and convert it into a list of words.  
-# tokens = tokenize(load_entire_file('./sample_text.txt'))
-# print "Tokenized input:", tokens
+tokens = tokenize(load_entire_file('./sample_text.txt'))
+print "Tokenized input:", tokens
 
 #load the text, images etc from an internet resource
-req = urllib2.Request('https://en.wikipedia.org/wiki/Barack_Obama')
-response = urllib2.urlopen(req)
-html_page = response.read()
+# $req = urllib2.Request('https://en.wikipedia.org/wiki/Barack_Obama')
+# response = urllib2.urlopen(req)
+# html_page = response.read()
 
 #initialise beautiful soup
-soup = BeautifulSoup(html_page, 'html.parser')
+# soup = BeautifulSoup(html_page, 'html.parser')
 
 
 
