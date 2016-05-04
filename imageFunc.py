@@ -28,12 +28,4 @@ if __name__ == '__main__':
   # assumes you have a test.jpg in the working directory! 
   pc = PixelCounter('test.jpg')
   print "(red, green, blue, total_pixel_count)"
-  print pc.averagePixels()
-
-
-# for my picture the ouput rgb values are:
-#   (red, green, blue, total_pixel_count)
-#   (135, 122, 107, 10077696)
-#
-# you can see that my image had 10,077,696 pixels and python/PIL
-#   still churned right through it!
+  print pc.averagePixels()[0:3]
