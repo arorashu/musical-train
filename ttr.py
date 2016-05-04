@@ -40,7 +40,7 @@ tokens = tokenize(load_entire_file('./sample_text.txt'))
 # soup = BeautifulSoup(html_page, 'html.parser')
 
 entities = ner.extract_entities(tokens)
-# print "\nEntities found:", entities
+print "\nEntities found:", entities
 print "\nNumber of entities detected:", len(entities)
 
 # entities is a list of tuples, each containing an xrange that indicates which
@@ -76,6 +76,8 @@ relation_detector = binary_relation_detector("./MITIE-models/english/binary_rela
 relation_name = "RELIGION"
 relation = [relation_detector, relation_name]
 binary_relations.append(relation)
+
+
 
 # make a list of neighboring entities.  Once we have this list we
 # will ask the relation detector if any of these entity pairs is an example of
